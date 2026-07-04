@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | S&S TECH COMPANY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="nav-logo">S&S TECH</div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger"><i class="fas fa-bars"></i></label>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="registration.html" class="active">Registration</a></li>
+      <li><a href="team.html">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="register-section">
+    <h2>IT Training & Recruitment Registration</h2>
+    <form class="register-form">
+      <fieldset>
+        <legend>Personal & Track Information</legend>
+        
+        <div class="row">
+          <div>
+            <label for="reg-name">Full Name</label>
+            <input type="text" id="reg-name" placeholder="Full Name" required minlength="3">
+          </div>
+          <div>
+            <label for="reg-email">Email Address</label>
+            <input type="email" id="reg-email" placeholder="Email Address" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="reg-tel">Phone Number</label>
+            <input type="tel" id="reg-tel" placeholder="Phone Number" required>
+          </div>
+          <div>
+            <label for="reg-pass">Account Password</label>
+            <input type="password" id="reg-pass" placeholder="Create Password" required minlength="6">
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="reg-loc">Location (City/Country)</label>
+            <input type="text" id="reg-loc" placeholder="Location (City/Country)" required>
+          </div>
+          <div>
+            <label for="reg-program">Select Program</label>
+            <select id="reg-program" required>
+              <option value="">Select Program</option>
+              <option value="web">Web Development</option>
+              <option value="mobile">Mobile App Development</option>
+              <option value="cyber">Cybersecurity</option>
+              <option value="data">Data Science</option>
+              <option value="cloud">Cloud Computing</option>
+              <option value="graphic">Graphic Design</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="reg-purpose">Purpose</label>
+            <select id="reg-purpose" required>
+              <option value="">Purpose</option>
+              <option value="train">Training</option>
+              <option value="job">Job Application</option>
+              <option value="intern">Internship</option>
+            </select>
+          </div>
+          <div class="radio-group-container">
+            <label>Shift Preference:</label>
+            <div class="radio-options">
+              <input type="radio" id="shift-morning" name="shift" value="morning" checked>
+              <label for="shift-morning" class="label-inline">Morning</label>
+              <input type="radio" id="shift-evening" name="shift" value="evening">
+              <label for="shift-evening" class="label-inline">Evening</label>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label for="reg-msg">Why do you want to join?</label>
+          <textarea id="reg-msg" placeholder="Why do you want to join?" rows="5"></textarea>
+        </div>
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="reg-terms" required>
+          <label for="reg-terms" class="label-inline">I verify that my provided training data is accurate</label>
+        </div>
+
+        <button type="submit">Submit Application</button>
+      </fieldset>
+    </form>
+  </section>
+
+  <section class="table-section">
+    <table>
+      <caption>S&S TECH Course Schedule & Pricing</caption>
+      <thead>
+        <tr>
+          <th scope="col">Course Track</th>
+          <th scope="col">Duration</th>
+          <th scope="col">Tuition Fee</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Web Development</th>
+          <td>3 Months</td>
+          <td>$150</td>
+        </tr>
+        <tr>
+          <th scope="row">Mobile App Development</th>
+          <td>4 Months</td>
+          <td>$200</td>
+        </tr>
+        <tr>
+          <th scope="row">Cybersecurity Track</th>
+          <td>3 Months</td>
+          <td>$180</td>
+        </tr>
+        <tr>
+          <th scope="row">Data Science Foundation</th>
+          <td>4 Months</td>
+          <td>$220</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Full-Stack Package Discount (All Tracks Combined)</td>
+          <td><strong>$550 Total</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+</main>
+
+<footer>
+  <h3>S&S TECH COMPANY</h3>
+  <p>Building the Future Through Technology</p>
+  <p>© 2026 All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
